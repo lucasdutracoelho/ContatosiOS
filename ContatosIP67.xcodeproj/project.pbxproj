@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916879B11B9B1DB000BE89CF /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */; };
 		91A022F51B91E51A00901D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022F41B91E51A00901D62 /* main.m */; };
 		91A022F81B91E51A00901D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022F71B91E51A00901D62 /* AppDelegate.m */; };
 		91A022FB1B91E51A00901D62 /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91A022F91B91E51A00901D62 /* ContatosIP67.xcdatamodeld */; };
-		91A022FE1B91E51A00901D62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022FD1B91E51A00901D62 /* ViewController.m */; };
+		91A022FE1B91E51A00901D62 /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022FD1B91E51A00901D62 /* FormularioContatoViewController.m */; };
 		91A023011B91E51A00901D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A022FF1B91E51A00901D62 /* Main.storyboard */; };
 		91A023031B91E51A00901D62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A023021B91E51A00901D62 /* Images.xcassets */; };
 		91A023061B91E51A00901D62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A023041B91E51A00901D62 /* LaunchScreen.xib */; };
 		91A023121B91E51A00901D62 /* ContatosIP67Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A023111B91E51A00901D62 /* ContatosIP67Tests.m */; };
+		91A0231D1B9208DC00901D62 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A0231C1B9208DC00901D62 /* Contato.m */; };
+		91A023201B92387B00901D62 /* ContatoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A0231F1B92387B00901D62 /* ContatoDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +31,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		916879AF1B9B1DB000BE89CF /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
+		916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		91A022EF1B91E51A00901D62 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A022F31B91E51A00901D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A022F41B91E51A00901D62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91A022F61B91E51A00901D62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91A022F71B91E51A00901D62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		91A022FA1B91E51A00901D62 /* ContatosIP67.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContatosIP67.xcdatamodel; sourceTree = "<group>"; };
-		91A022FC1B91E51A00901D62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		91A022FD1B91E51A00901D62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		91A022FC1B91E51A00901D62 /* FormularioContatoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewController.h; sourceTree = "<group>"; };
+		91A022FD1B91E51A00901D62 /* FormularioContatoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormularioContatoViewController.m; sourceTree = "<group>"; };
 		91A023001B91E51A00901D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91A023021B91E51A00901D62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91A023051B91E51A00901D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		91A0230B1B91E51A00901D62 /* ContatosIP67Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContatosIP67Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A023101B91E51A00901D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A023111B91E51A00901D62 /* ContatosIP67Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatosIP67Tests.m; sourceTree = "<group>"; };
+		91A0231B1B9208DC00901D62 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		91A0231C1B9208DC00901D62 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		91A0231E1B92387B00901D62 /* ContatoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDao.h; sourceTree = "<group>"; };
+		91A0231F1B92387B00901D62 /* ContatoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +94,19 @@
 			children = (
 				91A022F61B91E51A00901D62 /* AppDelegate.h */,
 				91A022F71B91E51A00901D62 /* AppDelegate.m */,
-				91A022FC1B91E51A00901D62 /* ViewController.h */,
-				91A022FD1B91E51A00901D62 /* ViewController.m */,
+				91A022FC1B91E51A00901D62 /* FormularioContatoViewController.h */,
+				91A022FD1B91E51A00901D62 /* FormularioContatoViewController.m */,
 				91A022FF1B91E51A00901D62 /* Main.storyboard */,
 				91A023021B91E51A00901D62 /* Images.xcassets */,
 				91A023041B91E51A00901D62 /* LaunchScreen.xib */,
 				91A022F91B91E51A00901D62 /* ContatosIP67.xcdatamodeld */,
 				91A022F21B91E51A00901D62 /* Supporting Files */,
+				91A0231B1B9208DC00901D62 /* Contato.h */,
+				91A0231C1B9208DC00901D62 /* Contato.m */,
+				91A0231E1B92387B00901D62 /* ContatoDao.h */,
+				91A0231F1B92387B00901D62 /* ContatoDao.m */,
+				916879AF1B9B1DB000BE89CF /* ListaContatosViewController.h */,
+				916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -222,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A0231D1B9208DC00901D62 /* Contato.m in Sources */,
 				91A022F81B91E51A00901D62 /* AppDelegate.m in Sources */,
+				916879B11B9B1DB000BE89CF /* ListaContatosViewController.m in Sources */,
 				91A022FB1B91E51A00901D62 /* ContatosIP67.xcdatamodeld in Sources */,
-				91A022FE1B91E51A00901D62 /* ViewController.m in Sources */,
+				91A023201B92387B00901D62 /* ContatoDao.m in Sources */,
+				91A022FE1B91E51A00901D62 /* FormularioContatoViewController.m in Sources */,
 				91A022F51B91E51A00901D62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +434,7 @@
 				91A023171B91E51A00901D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A023181B91E51A00901D62 /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				91A0231A1B91E51A00901D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
