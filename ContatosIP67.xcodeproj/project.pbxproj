@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9161A9B41BA4A37E008E1546 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */; };
+		9161A9B61BA4B3D1008E1546 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161A9B51BA4B3D1008E1546 /* MessageUI.framework */; };
 		916879B11B9B1DB000BE89CF /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */; };
 		91A022F51B91E51A00901D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022F41B91E51A00901D62 /* main.m */; };
 		91A022F81B91E51A00901D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A022F71B91E51A00901D62 /* AppDelegate.m */; };
@@ -31,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9161A9B21BA4A37E008E1546 /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
+		9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
+		9161A9B51BA4B3D1008E1546 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		916879AF1B9B1DB000BE89CF /* ListaContatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosViewController.h; sourceTree = "<group>"; };
 		916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosViewController.m; sourceTree = "<group>"; };
 		91A022EF1B91E51A00901D62 /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9161A9B61BA4B3D1008E1546 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,7 @@
 		91A022E61B91E51A00901D62 = {
 			isa = PBXGroup;
 			children = (
+				9161A9B51BA4B3D1008E1546 /* MessageUI.framework */,
 				91A022F11B91E51A00901D62 /* ContatosIP67 */,
 				91A0230E1B91E51A00901D62 /* ContatosIP67Tests */,
 				91A022F01B91E51A00901D62 /* Products */,
@@ -107,6 +114,8 @@
 				91A0231F1B92387B00901D62 /* ContatoDao.m */,
 				916879AF1B9B1DB000BE89CF /* ListaContatosViewController.h */,
 				916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */,
+				9161A9B21BA4A37E008E1546 /* GerenciadorDeAcoes.h */,
+				9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -243,6 +252,7 @@
 				91A022FB1B91E51A00901D62 /* ContatosIP67.xcdatamodeld in Sources */,
 				91A023201B92387B00901D62 /* ContatoDao.m in Sources */,
 				91A022FE1B91E51A00901D62 /* FormularioContatoViewController.m in Sources */,
+				9161A9B41BA4A37E008E1546 /* GerenciadorDeAcoes.m in Sources */,
 				91A022F51B91E51A00901D62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

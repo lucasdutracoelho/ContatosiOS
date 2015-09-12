@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "Contato.h"
 
-@interface GerenciadorDeAcoes : NSObject
+@interface GerenciadorDeAcoes : NSObject<UIActionSheetDelegate>
+
+@property Contato *contato;
+@property UIViewController *controller;
+-(id)initWithContato:(Contato *)contato;
+-(void) acoesDoController: (UIViewController *)controller;
 
 @end

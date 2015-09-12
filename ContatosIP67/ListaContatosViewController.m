@@ -22,6 +22,7 @@
         self.navigationItem.rightBarButtonItem = botaoExibirFormulario;
         self.dao = [ContatoDao contatoDaoInstance];
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
+        //self.linhaDestaque = -1;
     }
     return self;
 }
@@ -30,6 +31,8 @@
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FormularioContatoViewController *form = [storyBoard instantiateViewControllerWithIdentifier:@"Form-Contato"];
+    //delegate
+    form.delegate = self;
     if(self.contatoSelecionado){
         form.contato = self.contatoSelecionado;
     }
@@ -80,8 +83,47 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView reloadData]; 
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    if(self.linhaDestaque >= 0 && [self.dao.contatos count] > 0){
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.linhaDestaque inSection:0];
+        [self.tableView
+         selectRowAtIndexPath:indexPath animated:YES
+         scrollPosition:UITableViewScrollPositionNone];
+        [self.tableView scrollToRowAtIndexPath:indexPath
+                              atScrollPosition:UITableViewScrollPositionNone animated:YES];
+        //self.linhaDestaque = -1;
+    }
+    
+}
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(exibeMaisAcoes:)];
+    [self.tableView addGestureRecognizer:longPress];
+}
 
+-(void)contatoAtualizado:(Contato *)contato {
+    self.linhaDestaque = [self.dao buscaPosicaoDoContato:contato];
+}
+
+-(void)contatoAdicionado:(Contato *)contato {
+    self.linhaDestaque = [self.dao buscaPosicaoDoContato:contato];
+}
+
+-(void)exibeMaisAcoes:(UIGestureRecognizer *)gesture{
+    if(gesture.state == UIGestureRecognizerStateBegan){
+        CGPoint ponto = [gesture locationInView:self.tableView];
+        NSIndexPath *index = [self.tableView indexPathForRowAtPoint:ponto];
+        if(index){
+            self.contatoSelecionado = [self.dao buscaContatoDaPosicao:index.row];
+            _gerenciador = [[GerenciadorDeAcoes alloc]
+                            initWithContato:self.contatoSelecionado];
+            [self.gerenciador acoesDoController:self];
+        }
+        
+    }
+}
 
 @end
 
