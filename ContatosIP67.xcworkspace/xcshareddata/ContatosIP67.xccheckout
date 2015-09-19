@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>06C1B132-C664-455E-A1DB-57AC0C5F6F38</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ContatosIP67</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8E6F6126DF6291F2BD771242BD9A1AB6CA9218A</key>
+		<string>https://github.com/lucasdutracoelho/ContatosiOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ContatosIP67.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8E6F6126DF6291F2BD771242BD9A1AB6CA9218A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lucasdutracoelho/ContatosiOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8E6F6126DF6291F2BD771242BD9A1AB6CA9218A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8E6F6126DF6291F2BD771242BD9A1AB6CA9218A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ContatosIP67</string>
+		</dict>
+	</array>
+</dict>
+</plist>

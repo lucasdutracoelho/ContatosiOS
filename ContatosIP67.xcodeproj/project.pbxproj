@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3559F757DD554AA29CCD99D4 /* libPods-ContatosIP67.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634295F9FAFE4613960445C2 /* libPods-ContatosIP67.a */; };
+		9123F1DE1BADB0A400264A78 /* ContatosNoMapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9123F1DC1BADB0A400264A78 /* ContatosNoMapaViewController.m */; };
+		9123F1DF1BADB0A400264A78 /* ContatosNoMapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9123F1DD1BADB0A400264A78 /* ContatosNoMapaViewController.xib */; };
+		9123F1E11BADB11D00264A78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9123F1E01BADB11D00264A78 /* MapKit.framework */; };
+		9123F1E41BADEE6200264A78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9123F1E31BADEE6200264A78 /* CoreLocation.framework */; };
 		9161A9B41BA4A37E008E1546 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */; };
 		9161A9B61BA4B3D1008E1546 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161A9B51BA4B3D1008E1546 /* MessageUI.framework */; };
 		916879B11B9B1DB000BE89CF /* ListaContatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */; };
@@ -33,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0642A755901F4B62BA11383C /* Pods-ContatosIP67.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatosIP67.xcconfig"; path = "Pods/Pods-ContatosIP67.xcconfig"; sourceTree = "<group>"; };
+		634295F9FAFE4613960445C2 /* libPods-ContatosIP67.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContatosIP67.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9123F1DB1BADB0A400264A78 /* ContatosNoMapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosNoMapaViewController.h; sourceTree = "<group>"; };
+		9123F1DC1BADB0A400264A78 /* ContatosNoMapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaViewController.m; sourceTree = "<group>"; };
+		9123F1DD1BADB0A400264A78 /* ContatosNoMapaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaViewController.xib; sourceTree = "<group>"; };
+		9123F1E01BADB11D00264A78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9123F1E21BADD68600264A78 /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
+		9123F1E31BADEE6200264A78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9161A9B21BA4A37E008E1546 /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
 		9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
 		9161A9B51BA4B3D1008E1546 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -63,7 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9123F1E41BADEE6200264A78 /* CoreLocation.framework in Frameworks */,
+				9123F1E11BADB11D00264A78 /* MapKit.framework in Frameworks */,
 				9161A9B61BA4B3D1008E1546 /* MessageUI.framework in Frameworks */,
+				3559F757DD554AA29CCD99D4 /* libPods-ContatosIP67.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,10 +96,13 @@
 		91A022E61B91E51A00901D62 = {
 			isa = PBXGroup;
 			children = (
+				9123F1E01BADB11D00264A78 /* MapKit.framework */,
 				9161A9B51BA4B3D1008E1546 /* MessageUI.framework */,
 				91A022F11B91E51A00901D62 /* ContatosIP67 */,
 				91A0230E1B91E51A00901D62 /* ContatosIP67Tests */,
 				91A022F01B91E51A00901D62 /* Products */,
+				0642A755901F4B62BA11383C /* Pods-ContatosIP67.xcconfig */,
+				EF22F710FFCF4B8491341A99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +135,10 @@
 				916879B01B9B1DB000BE89CF /* ListaContatosViewController.m */,
 				9161A9B21BA4A37E008E1546 /* GerenciadorDeAcoes.h */,
 				9161A9B31BA4A37E008E1546 /* GerenciadorDeAcoes.m */,
+				9123F1DB1BADB0A400264A78 /* ContatosNoMapaViewController.h */,
+				9123F1DC1BADB0A400264A78 /* ContatosNoMapaViewController.m */,
+				9123F1E21BADD68600264A78 /* Vila Mariana.gpx */,
+				9123F1DD1BADB0A400264A78 /* ContatosNoMapaViewController.xib */,
 			);
 			path = ContatosIP67;
 			sourceTree = "<group>";
@@ -146,6 +169,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF22F710FFCF4B8491341A99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9123F1E31BADEE6200264A78 /* CoreLocation.framework */,
+				634295F9FAFE4613960445C2 /* libPods-ContatosIP67.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91A023151B91E51A00901D62 /* Build configuration list for PBXNativeTarget "ContatosIP67" */;
 			buildPhases = (
+				877A67FCE56D4C99998DE72E /* Check Pods Manifest.lock */,
 				91A022EB1B91E51A00901D62 /* Sources */,
 				91A022EC1B91E51A00901D62 /* Frameworks */,
 				91A022ED1B91E51A00901D62 /* Resources */,
+				A36B1BBB9DB94D6BB453990D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +262,7 @@
 			files = (
 				91A023011B91E51A00901D62 /* Main.storyboard in Resources */,
 				91A023061B91E51A00901D62 /* LaunchScreen.xib in Resources */,
+				9123F1DF1BADB0A400264A78 /* ContatosNoMapaViewController.xib in Resources */,
 				91A023031B91E51A00901D62 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +276,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		877A67FCE56D4C99998DE72E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A36B1BBB9DB94D6BB453990D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ContatosIP67-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91A022EB1B91E51A00901D62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +321,7 @@
 				91A023201B92387B00901D62 /* ContatoDao.m in Sources */,
 				91A022FE1B91E51A00901D62 /* FormularioContatoViewController.m in Sources */,
 				9161A9B41BA4A37E008E1546 /* GerenciadorDeAcoes.m in Sources */,
+				9123F1DE1BADB0A400264A78 /* ContatosNoMapaViewController.m in Sources */,
 				91A022F51B91E51A00901D62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +442,7 @@
 		};
 		91A023161B91E51A00901D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0642A755901F4B62BA11383C /* Pods-ContatosIP67.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContatosIP67/Info.plist;
@@ -383,6 +453,7 @@
 		};
 		91A023171B91E51A00901D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0642A755901F4B62BA11383C /* Pods-ContatosIP67.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContatosIP67/Info.plist;
