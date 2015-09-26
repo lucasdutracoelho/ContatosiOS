@@ -21,6 +21,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    self.dao = [ContatoDao contatoDaoInstance];
+    
     ListaContatosViewController *lista = [ListaContatosViewController new];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lista];
@@ -49,6 +51,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self.dao saveContext];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

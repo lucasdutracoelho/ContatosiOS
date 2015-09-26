@@ -111,6 +111,9 @@
                                     <action selector="buscarCoordenadas:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4u3-aG-hzY"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7bl-gv-Mgi">
+                                <rect key="frame" x="279" y="336" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -120,6 +123,7 @@
                         <outlet property="email" destination="kjO-u3-i30" id="mVb-4A-z9N"/>
                         <outlet property="endereco" destination="hQw-hY-a9g" id="0BN-SB-iBO"/>
                         <outlet property="latitude" destination="aFN-cu-dyz" id="4b5-ZW-5gI"/>
+                        <outlet property="loading" destination="7bl-gv-Mgi" id="rm6-Y5-COX"/>
                         <outlet property="longitude" destination="uoB-NJ-8QR" id="vEG-XZ-DAe"/>
                         <outlet property="nome" destination="CTf-9p-5jE" id="6dT-j4-z04"/>
                         <outlet property="site" destination="ypa-sS-fNT" id="EdA-Hu-H12"/>

@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *botaoAdicionaImagem;
 @property (weak, nonatomic) IBOutlet UITextField *latitude;
 @property (weak, nonatomic) IBOutlet UITextField *longitude;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loading;
 
 @property (strong) ContatoDao *dao;
 

@@ -31,7 +31,8 @@
     if(self.contato){
         self.navigationItem.title = @"Alterar";
         UIBarButtonItem *confirmar = [[UIBarButtonItem alloc]
-                                      initWithTitle:@"Confirmar" style:UIBarButtonItemStylePlain target:self action:@selector(atualizaContato)];
+                                      initWithTitle
+                                      :@"Confirmar" style:UIBarButtonItemStylePlain target:self action:@selector(atualizaContato)];
         self.navigationItem.rightBarButtonItem = confirmar;
         
         
@@ -57,7 +58,7 @@
 
 -(void)pegaDadosDoFormulario{
     if(!self.contato){
-        self.contato = [Contato new];
+        self.contato = [self.dao novoContato];
     }
     if([self.botaoAdicionaImagem backgroundImageForState:UIControlStateNormal]){
         self.contato.foto = [self.botaoAdicionaImagem backgroundImageForState:UIControlStateNormal];
@@ -138,7 +139,9 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
--(IBAction)buscarCoordenadas:(id)sender{
+-(IBAction)buscarCoordenadas:(UIButton*)sender{
+    [self.loading startAnimating];
+    sender.hidden = YES;
     CLGeocoder *geocoder = [CLGeocoder new];
     [geocoder geocodeAddressString:self.endereco.text completionHandler:
      ^(NSArray *resultados, NSError *error) {
@@ -147,7 +150,11 @@
              CLLocationCoordinate2D coordenada = resultado.location.coordinate;
              self.latitude.text = [NSString stringWithFormat:@"%f", coordenada.latitude];
              self.longitude.text = [NSString stringWithFormat:@"%f", coordenada.longitude];
+         }else{
+             NSLog(@"Erro: %@ Resultados: %@", error , resultados);
          }
+         [self.loading stopAnimating];
+         sender.hidden = NO;
      }];
 }
 
